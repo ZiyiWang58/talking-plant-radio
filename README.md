@@ -179,6 +179,3 @@ versions, safe configuration template, tests and startup files. Full physical
 reproduction still requires the exact AM transmitter, coupling coil, crystal
 radio, wiring, bill of materials and enclosure documentation listed in
 `hardware/README.md`. Add only materials verified against the final exhibit.
-
-No licence is included in this package. Choose and add an appropriate licence
-before publishing if you want others to copy, modify or redistribute the work.
