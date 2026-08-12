@@ -1,0 +1,18 @@
+[Unit]
+Description=TuneIn plant sensing and AM voice controller
+Wants=network-online.target
+After=network-online.target pipewire.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/TuneIn
+ExecStart=%h/TuneIn/start_main_service.sh
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+Environment=PIPEWIRE_VOLUME=60%%
+# If the analogue output is not the default sink, uncomment and change its ID.
+# Environment=PIPEWIRE_SINK=57
+
+[Install]
+WantedBy=default.target

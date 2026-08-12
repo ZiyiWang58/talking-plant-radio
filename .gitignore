@@ -1,31 +1,27 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
 
-# Virtual environments
+# Python
 .venv/
 venv/
-env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
-# Secrets
-.env
-*.key
-*.pem
+# Generated audio and runtime logs
+latest_plant_voice.wav
+latest_plant_voice_raw.wav
+logs/
+*.log
 
-# Generated audio
-*.wav
-*.mp3
-received_audio/
-
-# OS files
+# Editors and operating systems
 .DS_Store
 Thumbs.db
-
-# Editor files
-.vscode/
 .idea/
+.vscode/
 
-# Logs
-logs/
+# Local backups
+*_backup.py
+*_before_*

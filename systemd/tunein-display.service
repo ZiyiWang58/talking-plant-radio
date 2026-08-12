@@ -1,0 +1,15 @@
+[Unit]
+Description=TuneIn phone status display
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/TuneIn
+ExecStart=%h/TuneIn/start_display.sh
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
