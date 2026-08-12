@@ -9,8 +9,7 @@ AM transmitter. A phone-friendly Flask page shows the latest reading and spoken
 message.
 
 This repository is based on the final Raspberry Pi program
-`plant_pi_controller_local_playback.py`. It does not use the older
-`plant_pi_controller_prayer_profile.py` entry point.
+`plant_pi_controller_local_playback.py`.
 
 ## Repository contents
 
@@ -61,7 +60,7 @@ sensors is required.
 3. Clone the repository to `~/TuneIn` and enter it:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL ~/TuneIn
+   git clone https://github.com/ZiyiWang58/talking-plant-radio.git ~/TuneIn
    cd ~/TuneIn
    ```
 
